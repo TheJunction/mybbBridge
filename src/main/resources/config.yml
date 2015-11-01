@@ -1,0 +1,44 @@
+##################
+#     Config     #
+##################
+register: enabled
+refer: enabled
+points: enabled
+
+#Minutes before re-syncing data (Must restart/reload server to apply)
+delay: 3
+
+##################
+# MySQL Database #
+##################
+
+# Database IP
+ip: localhost
+
+# Database Port (default 3306)
+port: 3306
+
+# MySQL Username and Password
+user: username
+pass: password
+
+# Player Points Database table name
+tablename: Database
+
+# MyBB Database table name
+sqltable: MyBB
+
+# MyBB Prefix (default mybb_)
+prefix: mybb_
+
+
+##################
+#    Commands    #
+##################
+
+register:
+  - give %player% diamond 1
+  - broadcast %player% just registered!
+refer:
+  - eco give %player% 500
+  - tell %player% Thanks for supporting us!

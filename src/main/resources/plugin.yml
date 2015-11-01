@@ -1,0 +1,7 @@
+name: mybbBridge
+main: net.cubexmc.mybbbridge.Main
+version: 1.0
+description: MyBB to Spigot bridge. By PantherMan594. (c) CubeXMC Network.
+commands:
+  mybbsync:
+    description: Re-syncs the player's info
